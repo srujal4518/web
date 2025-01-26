@@ -297,8 +297,9 @@ transition: transform 0.8s ease-in-out, box-shadow 0.8s ease-in-out;
 }
 
 #product1 .pro .des span {
-  color: #606063;
-  font-size: 12px;
+  color: purple;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
 }
 
 #product1 .pro .des h5 {
@@ -331,7 +332,9 @@ transition: transform 0.8s ease-in-out, box-shadow 0.8s ease-in-out;
   position: absolute;
   bottom: 20px;
   right: 10px;
+ 
 }
+
 
 #banner {
   display: flex;
