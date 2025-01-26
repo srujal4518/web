@@ -1,0 +1,151 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 50%, #ff9a9e 100%);
+    overflow: hidden;
+    color: #333;
+}
+
+.main {
+    width: 400px;
+    padding: 40px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    color:darkmagenta;
+}
+
+/* Label styles */
+label {
+    display: block;
+    margin-top: 20px;
+    font-size: 1rem;
+    color: black;
+}
+
+/* Input Fields */
+input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border-radius: 6px;
+    background:whitesmoke;
+    border: none;
+    font-size: 1rem;
+    color: #333;
+    outline: none;
+    transition: 0.3s ease;
+}
+
+input:focus {
+    background: rgba(255, 255, 255, 0.7);
+    box-shadow: 0 0 8px rgba(255, 154, 158, 0.6);
+}
+
+/* Button Styles */
+button {
+    width: 100%;
+    padding: 12px;
+    background:lightpink;
+    color:purple;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    margin-top: 20px;
+}
+
+button:hover {
+    background:green;
+    box-shadow: 0 0 12px rgba(255, 117, 140, 0.7);
+}
+
+/* Links */
+p {
+    margin-top: 20px;
+    color: black;
+}
+
+p a {
+    color:blue;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+
+/* Wrap for Button */
+.wrap {
+    margin-top: 30px;
+}
+@media screen and (max-width: 820px) {
+    .main {
+        width: 90%;  /* Allow the form to take up more width */
+        padding: 30px;  /* Slightly reduced padding */
+    }
+
+    h1 {
+        font-size: 1.8rem;  /* Adjust heading size */
+    }
+
+    button {
+        font-size: 1rem;  /* Slightly smaller font for the button */
+    }
+
+    input, button {
+        padding: 10px;  /* Reduced padding on smaller screens */
+    }
+
+    label {
+        font-size: 0.9rem;  /* Slightly smaller font for labels */
+    }
+}
+
+/* For screens smaller than 480px */
+@media screen and (max-width: 480px) {
+    .main {
+        width: 90%;  /* Full width for very small screens */
+        padding: 20px;  /* Further reduced padding */
+    }
+
+    h1 {
+        font-size: 1.6rem;  /* Smaller font size for heading */
+    }
+
+    input, button {
+        font-size: 0.9rem;  /* Smaller font size for inputs and buttons */
+        padding: 8px;  /* Reduced padding */
+    }
+
+    label {
+        font-size: 0.8rem;  /* Further reduce font size for labels */
+    }
+
+    .wrap {
+        margin-top: 20px;  /* Adjust the margin for smaller screens */
+    }
+}
